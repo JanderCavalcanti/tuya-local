@@ -1,0 +1,162 @@
+name: Six gang switch
+products:
+  - id: ayxfbttttjx3epzn
+    model: LITE-6
+entities:
+  - entity: switch
+    translation_key: switch_x
+    translation_placeholders:
+      x: "1"
+    dps:
+      - id: 1
+        name: switch
+        type: boolean
+  - entity: switch
+    translation_key: switch_x
+    translation_placeholders:
+      x: "2"
+    dps:
+      - id: 2
+        name: switch
+        type: boolean
+  - entity: switch
+    translation_key: switch_x
+    translation_placeholders:
+      x: "3"
+    dps:
+      - id: 3
+        name: switch
+        type: boolean
+  - entity: switch
+    translation_key: switch_x
+    translation_placeholders:
+      x: "4"
+    dps:
+      - id: 4
+        name: switch
+        type: boolean
+  - entity: switch
+    translation_key: switch_x
+    translation_placeholders:
+      x: "5"
+    dps:
+      - id: 5
+        name: switch
+        type: boolean
+  - entity: switch
+    translation_key: switch_x
+    translation_placeholders:
+      x: "6"
+    dps:
+      - id: 6
+        name: switch
+        type: boolean
+  - entity: time
+    category: config
+    translation_key: timer_x
+    translation_placeholders:
+      x: "1"
+    dps:
+      - id: 7
+        name: second
+        type: integer
+        optional: true
+        range:
+          min: 0
+          max: 86400
+  - entity: time
+    category: config
+    translation_key: timer_x
+    translation_placeholders:
+      x: "2"
+    dps:
+      - id: 8
+        name: second
+        type: integer
+        optional: true
+        range:
+          min: 0
+          max: 86400
+  - entity: time
+    category: config
+    translation_key: timer_x
+    translation_placeholders:
+      x: "3"
+    dps:
+      - id: 9
+        name: second
+        type: integer
+        optional: true
+        range:
+          min: 0
+          max: 86400
+  - entity: time
+    category: config
+    translation_key: timer_x
+    translation_placeholders:
+      x: "4"
+    dps:
+      - id: 10
+        name: second
+        type: integer
+        optional: true
+        range:
+          min: 0
+          max: 86400
+  - entity: time
+    category: config
+    translation_key: timer_x
+    translation_placeholders:
+      x: "5"
+    dps:
+      - id: 11
+        name: second
+        type: integer
+        optional: true
+        range:
+          min: 0
+          max: 86400
+  - entity: time
+    category: config
+    translation_key: timer_x
+    translation_placeholders:
+      x: "6"
+    dps:
+      - id: 12
+        name: second
+        type: integer
+        optional: true
+        range:
+          min: 0
+          max: 86400
+  - entity: switch
+    name: All switches
+    icon: "mdi:toggle-switch-variant"
+    dps:
+      - id: 13
+        name: switch
+        type: boolean
+        optional: true
+  - entity: select
+    translation_key: initial_state
+    category: config
+    dps:
+      - id: 14
+        type: string
+        name: option
+        optional: true
+        mapping:
+          - dps_val: "off"
+            value: "off"
+          - dps_val: "on"
+            value: "on"
+          - dps_val: memory
+            value: memory
+  - entity: light
+    translation_key: backlight
+    category: config
+    dps:
+      - id: 16
+        type: boolean
+        name: switch
+        optional: true
